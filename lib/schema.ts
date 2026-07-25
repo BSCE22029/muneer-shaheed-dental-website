@@ -16,6 +16,6 @@ export function dentistSchema() {
       addressCountry: "PK",
     },
     priceRange: "Rs. 1,500 - Rs. 60,000",
-    sameAs: [siteConfig.social.facebook].filter((s) => s !== "Not publicly available"),
+    sameAs: ([siteConfig.social.facebook] as string[]).filter((s) => s !== "Not publicly available"),
   };
 }
